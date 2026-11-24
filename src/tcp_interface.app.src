@@ -1,0 +1,8 @@
+{application,
+ tcp_interface,
+ [{description, "A TCP interface application built with Erlang/OTP"},
+  {vsn, "0.1.0"},
+  {registered, [tcp_interface_sup]},
+  {mod, {tcp_interface_app, []}},
+  {applications, [kernel, stdlib]},
+  {modules, [tcp_interface_app, tcp_interface_server, tcp_interface_sup]}]}.
